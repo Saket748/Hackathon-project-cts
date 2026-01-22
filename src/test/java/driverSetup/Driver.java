@@ -1,4 +1,4 @@
-package org.mp.driverSetup;
+package driverSetup;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

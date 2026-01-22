@@ -1,5 +1,6 @@
 
-package org.mp.excel;
+package excel;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -23,8 +24,6 @@ public class ExcelRead {
         wb.close();
         return value;
     }
-
-
 
     public static String getSenderFirstName() throws IOException {
         XSSFWorkbook wb = workbook();

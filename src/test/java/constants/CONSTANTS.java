@@ -1,4 +1,4 @@
-package org.mp.constants;
+package constants;
 
 public class CONSTANTS {
 
