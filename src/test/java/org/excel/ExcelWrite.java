@@ -1,4 +1,4 @@
-package excel;
+package org.excel;
 
 public class ExcelWrite {
 }

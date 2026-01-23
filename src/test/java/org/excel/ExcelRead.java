@@ -1,5 +1,5 @@
 
-package excel;
+package org.excel;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -78,6 +78,7 @@ public class ExcelRead {
         Cell cell = row.getCell(1);
         return cell.toString().trim();
     }
+
     public static String getReceiverEmail() throws IOException {
         XSSFWorkbook wb = workbook();
 
