@@ -20,7 +20,7 @@ public class GiftCardsPage extends BasePage {
 
     // Happy Birthday EGV card
 
-    @FindBy(xpath = "//img[contains(@src,'birthday')]")
+    @FindBy(xpath = "//img[contains(@class, 'border-secondary')]")
 
     private WebElement happyBirthdayCard;
 
@@ -51,6 +51,10 @@ public class GiftCardsPage extends BasePage {
     @FindBy(xpath = "//div[@id='receiver-details']//input[@id='lastname']")
 
     private WebElement receiverLastName;
+
+    @FindBy(xpath = "(//input[@id='email'])[2]")
+
+    private WebElement receiverEmail;
 
     // Message box
 
@@ -100,11 +104,13 @@ public class GiftCardsPage extends BasePage {
 
     // Enter receiver details
 
-    public void enterReceiverDetails(String fName, String lName) {
+    public void enterReceiverDetails(String fName, String lName,String email) {
 
         receiverFirstName.sendKeys(fName);
 
         receiverLastName.sendKeys(lName);
+
+        receiverEmail.sendKeys(email);
 
     }
 
@@ -124,13 +130,14 @@ public class GiftCardsPage extends BasePage {
 
     }
 
+
     /* ================= COMPLETE FLOW ================= */
 
     public void completeGiftCardForm(
 
             String sFName, String sLName, String sEmail, String sMobile,
 
-            String rFName, String rLName, String message) {
+            String rFName, String rLName, String rEmail, String message) {
 
         scrollToBirthdayCard();
 
@@ -138,12 +145,41 @@ public class GiftCardsPage extends BasePage {
 
         enterSenderDetails(sFName, sLName, sEmail, sMobile);
 
-        enterReceiverDetails(rFName, rLName);
+        enterReceiverDetails(rFName, rLName, rEmail);
 
         enterMessage(message);
 
         clickPreviewEGiftCard();
 
     }
+
+
+
+    /** Returns native HTML5 validation message from the email inputs (sender first, then receiver). */
+    public String getEmailErrorMessage() {
+        String msg = getValidationMessage(senderEmail);
+        if (hasText(msg)) return msg;
+
+        msg = getValidationMessage(receiverEmail);
+        if (hasText(msg)) return msg;
+
+        try {
+            WebElement active = driver.switchTo().activeElement();
+            msg = getValidationMessage(active);
+            if (hasText(msg)) return msg;
+        } catch (Exception ignored) {}
+
+        return "";
+    }
+
+    private String getValidationMessage(WebElement el) {
+        try { return el.getAttribute("validationMessage"); }
+        catch (Exception e) { return ""; }
+    }
+
+    private boolean hasText(String s) {
+        return s != null && !s.trim().isEmpty();
+    }
+
 
 }

@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelRead {
 
     public static XSSFWorkbook workbook() throws IOException {
-        FileInputStream fis = new FileInputStream("src/main/java/org/mp/excel/Hackathonexcel.xlsx");
+        FileInputStream fis = new FileInputStream("src/test/java/org/excel/Hackathonexcel.xlsx");
         return new XSSFWorkbook(fis);
     }
 
