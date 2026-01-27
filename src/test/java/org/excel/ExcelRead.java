@@ -24,6 +24,25 @@ public class ExcelRead {
         wb.close();
         return value;
     }
+    public static String getAmount() throws IOException {
+        XSSFWorkbook wb = workbook();
+        XSSFSheet sheet = wb.getSheet("Denomination");
+        Row row = sheet.getRow(1);        // row 2 (0-based index)
+        Cell cell = row.getCell(0);       // column A
+        String v = cell.toString().trim();
+        wb.close();
+        return v;
+    }
+
+    public static String getQuantity() throws IOException {
+        XSSFWorkbook wb = workbook();
+        XSSFSheet sheet = wb.getSheet("Denomination");
+        Row row = sheet.getRow(1);        // row 2
+        Cell cell = row.getCell(1);       // column B
+        String v = cell.toString().trim();
+        wb.close();
+        return v;
+    }
 
     public static String getSenderFirstName() throws IOException {
         XSSFWorkbook wb = workbook();
