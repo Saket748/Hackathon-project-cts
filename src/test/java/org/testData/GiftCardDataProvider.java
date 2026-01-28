@@ -20,9 +20,16 @@ public class GiftCardDataProvider {
             String receiverEmail     = ExcelRead.getReceiverEmail();
             String message           = ExcelRead.getMessage();
 
+
+            String amount            = ExcelRead.getAmount();
+            String qty               = ExcelRead.getQuantity();
+
+
             // Return one row with 8 parameters (matches your test method signature)
             return new Object[][] {
                     {
+                            amount,
+                            qty,
                             senderFirstName,
                             senderLastName,
                             senderEmail,

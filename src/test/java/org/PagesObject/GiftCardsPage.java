@@ -1,29 +1,25 @@
 package org.PagesObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-import java.sql.Driver;
-import java.time.Duration;
-import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class GiftCardsPage extends BasePage {
 
-    private static final Logger log = LogManager.getLogger(GiftCardsPage.class);
-
     public GiftCardsPage(WebDriver driver) {
         super(driver);
-        log.info("GiftCardsPage initialized with driver: {}", driver);
     }
 
     /* ================= LOCATORS ================= */
-    @FindBy(xpath = "//img[contains(@class,'border-secondary')]")
-    private WebElement happyBirthdayCard;
 
+    //Happy Birthday card
+    private final By birthdayImgBy = By.cssSelector("img.img-fluid.rounded.border.border-secondary.p-1");
+
+    // Sender details
     @FindBy(id = "firstname")
     private WebElement senderFirstName;
 
@@ -36,6 +32,7 @@ public class GiftCardsPage extends BasePage {
     @FindBy(id = "telephone")
     private WebElement senderMobile;
 
+    // Receiver details
     @FindBy(xpath = "//div[@id='receiver-details']//input[@id='firstname']")
     private WebElement receiverFirstName;
 
@@ -45,110 +42,131 @@ public class GiftCardsPage extends BasePage {
     @FindBy(xpath = "(//input[@id='email'])[2]")
     private WebElement receiverEmail;
 
+    // Message box
     @FindBy(id = "giftMessage")
     private WebElement messageBox;
 
-    @FindBy(xpath = "//button[contains(text(),'PREVIEW E-GIFT CARD')]")
+    // Preview E-Gift Card button
+    @FindBy(xpath = "//button[contains(translate(normalize-space(.), 'abcdefghijklmnopqrstuvwxyz', 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 'PREVIEW')]")
     private WebElement previewEGiftCardBtn;
 
     /* ================= ACTION METHODS ================= */
 
+    //Used the locators inside the method to avoid StaleElementReferenceException
+    public void setDenominationAndDelivery(String amount, String qty) {
+
+        // --- fresh locate amount & qty before using them (prevents stale) ---
+        WebElement amountEl = waitFor(10).until(
+                ExpectedConditions.refreshed(
+                        ExpectedConditions.visibilityOfElementLocated(By.id("denomination"))
+                )
+        );
+        WebElement qtyEl = waitFor(10).until(
+                ExpectedConditions.refreshed(
+                        ExpectedConditions.visibilityOfElementLocated(By.id("quantity"))
+                )
+        );
+
+        // scroll the FRESH element (not the @FindBy field)
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block:'center'});", amountEl);
+
+        amountEl.clear();
+        amountEl.sendKeys(amount == null ? "" : amount.trim());
+
+        qtyEl.clear();
+        qtyEl.sendKeys(qty == null ? "" : qty.trim());
+
+        // --- click the INPUT radios via their ids (freshly located) ---
+        WebElement sendGiftInput = waitFor(5).until(
+                ExpectedConditions.elementToBeClickable(By.id("radiogift")));
+        sendGiftInput.click();
+
+        WebElement todayInput = waitFor(5).until(
+                ExpectedConditions.elementToBeClickable(By.id("giftNow")));
+        todayInput.click();
+
+        WebElement emailInput = waitFor(5).until(
+                ExpectedConditions.elementToBeClickable(By.id("deliveryModeEMAIL")));
+        emailInput.click();
+    }
+
+
+
     public void scrollToBirthdayCard() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        log.debug("Scrolling to Happy Birthday card...");
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", happyBirthdayCard);
-        log.info("Scrolled to Happy Birthday card.");
+        WebElement card = waitFor(20).until(ExpectedConditions.presenceOfElementLocated(birthdayImgBy));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", card);
+        waitFor(10).until(ExpectedConditions.visibilityOfElementLocated(birthdayImgBy));
     }
 
     public void selectHappyBirthdayCard() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        log.debug("Clicking Happy Birthday card...");
-        happyBirthdayCard.click();
-        log.info("Happy Birthday card selected.");
+        WebElement card = waitFor(10).until(ExpectedConditions.elementToBeClickable(birthdayImgBy));
+        try {
+            card.click();
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", card);
+        }
     }
 
+    private void preScroll() {
+        ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 600);");
+    }
+
+    // Enter sender details
     public void enterSenderDetails(String fName, String lName, String email, String mobile) {
-        log.debug("Entering sender details: {} {} | {} | {}", fName, lName, email, mobile);
         senderFirstName.sendKeys(fName);
         senderLastName.sendKeys(lName);
         senderEmail.sendKeys(email);
         senderMobile.sendKeys(mobile);
-        log.info("Sender details entered successfully.");
     }
 
+    // Enter receiver details
     public void enterReceiverDetails(String fName, String lName, String email) {
-        log.debug("Entering receiver details: {} {} | {}", fName, lName, email);
         receiverFirstName.sendKeys(fName);
         receiverLastName.sendKeys(lName);
         receiverEmail.sendKeys(email);
-        log.info("Receiver details entered successfully.");
     }
 
+    // Enter gift message
     public void enterMessage(String message) {
-        log.debug("Entering gift message: {}", message);
         messageBox.sendKeys(message);
-        log.info("Gift message entered.");
     }
 
+    // Click Preview E-Gift Card
+    private final By previewBtnBy = By.xpath("//button[contains(@class,'preview-button')]");
     public void clickPreviewEGiftCard() {
-        log.debug("Clicking Preview E-Gift Card button...");
-        previewEGiftCardBtn.click();
-        log.info("Preview E-Gift Card button clicked.");
+        WebElement btn = waitFor(10).until(
+                ExpectedConditions.elementToBeClickable(previewBtnBy)
+        );
+
+        // Scroll into center (avoids footer/header overlapping)
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block:'center'});", btn
+        );
+
+        try {
+            btn.click();   // normal click
+        } catch (Exception e) {
+            // fallback JS click
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", btn);
+        }
     }
 
+    /* ================= COMPLETE FLOW ================= */
     public void completeGiftCardForm(
+            String amount,String qty,
             String sFName, String sLName, String sEmail, String sMobile,
             String rFName, String rLName, String rEmail, String message) {
 
-        log.info("Starting complete gift card form flow...");
+        // If images are lazy-loaded, pre-scroll helps
+        setDenominationAndDelivery(amount, qty);
+        preScroll();
         scrollToBirthdayCard();
         selectHappyBirthdayCard();
+
         enterSenderDetails(sFName, sLName, sEmail, sMobile);
         enterReceiverDetails(rFName, rLName, rEmail);
         enterMessage(message);
         clickPreviewEGiftCard();
-        log.info("Gift card form completed successfully.");
-    }
-
-    public String getEmailErrorMessage() {
-        log.debug("Checking email validation messages...");
-        String msg = getValidationMessage(senderEmail);
-        if (hasText(msg)) {
-            log.warn("Sender email validation error: {}", msg);
-            return msg;
-        }
-
-        msg = getValidationMessage(receiverEmail);
-        if (hasText(msg)) {
-            log.warn("Receiver email validation error: {}", msg);
-            return msg;
-        }
-
-        try {
-            WebElement active = driver.switchTo().activeElement();
-            msg = getValidationMessage(active);
-            if (hasText(msg)) {
-                log.warn("Active element validation error: {}", msg);
-                return msg;
-            }
-        } catch (Exception e) {
-            log.error("Error while fetching active element validation message", e);
-        }
-
-        log.info("No email validation errors found.");
-        return "";
-    }
-
-    private String getValidationMessage(WebElement el) {
-        try {
-            return el.getAttribute("validationMessage");
-        } catch (Exception e) {
-            log.error("Failed to get validation message from element: {}", el, e);
-            return "";
-        }
-    }
-
-    private boolean hasText(String s) {
-        return s != null && !s.trim().isEmpty();
     }
 }

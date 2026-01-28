@@ -1,19 +1,17 @@
 package org.testCases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import org.PagesObject.GiftCardsPage;
 import org.PagesObject.HomePage;
 import org.testBase.BaseClass;
-import org.testData.GiftCardDataProvider;
 
 
 public class TC_GiftCards_DDT extends BaseClass {
 
-    @Test(dataProvider = "giftCardData", dataProviderClass = GiftCardDataProvider.class)
+    @Test(dataProvider = "giftCardData", dataProviderClass = org.testData.GiftCardDataProvider.class)
     public void verify_invalid_input_from_excel(
-
+            String amount,
+            String qty,
             String senderFirstName,
             String senderLastName,
             String senderEmail,
@@ -22,34 +20,31 @@ public class TC_GiftCards_DDT extends BaseClass {
             String receiverLastName,
             String receiverEmail,
             String message
-
     ) {
-        // Home → Gift Cards (handles new tab + readiness)
+        // 1) Navigate and open Gift Cards
         HomePage homePage = new HomePage(driver);
         homePage.openGiftCards();
 
-        // Gift Cards flow
+        // 2) Switch to the new tab (if opened)
+        switchToNewestTab();
+
+        // 3) Complete the form (the page object handles scroll/click/waits)
         GiftCardsPage giftPage = new GiftCardsPage(driver);
         giftPage.completeGiftCardForm(
-                senderFirstName, senderLastName, senderEmail, senderMobile,
-                receiverFirstName, receiverLastName, receiverEmail,
-                message
+                amount,qty,senderFirstName, senderLastName, senderEmail, senderMobile,
+                receiverFirstName, receiverLastName, receiverEmail, message
         );
 
-        // Capture HTML5 validation message
-        String actualError = giftPage.getEmailErrorMessage();
-        System.out.println("[GiftCard] Validation message: " + actualError);
+    }
 
-
-        /*String exp = expectedErrorContains == null ? "" : expectedErrorContains.trim();
-
-        if ("valid".equalsIgnoreCase(exp)) {
-            Assert.assertTrue(actualError == null || actualError.trim().isEmpty(),
-                    "Expected no validation error, but got: " + actualError);
-        } else {
-            Assert.assertTrue(actualError != null && !actualError.trim().isEmpty(),
-                    "Expected a validation message for invalid input, but got none.");
-        }*/
-
+    /** Switch to newest tab if openGiftCards() launched a new one. */
+    private void switchToNewestTab() {
+        String cur = driver.getWindowHandle();
+        for (String h : driver.getWindowHandles()) {
+            if (!h.equals(cur)) {
+                driver.switchTo().window(h);
+                break;
+            }
+        }
     }
 }
