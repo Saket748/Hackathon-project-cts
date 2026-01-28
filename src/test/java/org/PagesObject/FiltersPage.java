@@ -25,6 +25,9 @@ public class FiltersPage extends BasePage{
     // Apply Filter button
     @FindBy(xpath = "//span[text()='Apply Filter']")
     private WebElement applyFilterBtn;
+
+    @FindBy(xpath = "//div[contains(@class,'xmdLL')]")
+private List<WebElement> products;
     // Click on ALL FILTERS
     public void openAllFilters() {
         allFiltersBtn.click();
@@ -55,4 +58,19 @@ public class FiltersPage extends BasePage{
         applyFilters();
         logger.info("Completed flow: Apply Open Storage Filter");
     }
+
+    public void printFirstThreeProducts() {
+   int count = Math.min(3, products.size());
+   for (int i = 0; i < count; i++) {
+       WebElement product = products.get(i);
+       String name = product.findElement(By.xpath(".//h3")).getText();
+       String price = product.findElement(
+               By.xpath(".//div[contains(@class,'ug1_C')]//span")
+       ).getText();
+       System.out.println("Product " + (i + 1));
+       System.out.println("Name  : " + name);
+       System.out.println("Price : " + price);
+       System.out.println("-------------------------");
+   }
+}
 }
