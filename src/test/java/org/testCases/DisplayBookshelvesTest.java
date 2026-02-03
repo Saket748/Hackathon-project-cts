@@ -13,13 +13,13 @@ import org.extentReports.ExtentReport;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
-// ✅ LOGGER IMPORTS
+// LOGGER IMPORTS
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class DisplayBookshelvesTest extends BaseClass {
 
-    // ✅ LOGGER INSTANCE
+    // LOGGER INSTANCE
     private static final Logger logger = LogManager.getLogger(DisplayBookshelvesTest.class);
 
     @Test
@@ -70,4 +70,5 @@ public class DisplayBookshelvesTest extends BaseClass {
         extent.flush();   // IMPORTANT → generates the HTML file
         logger.info("Extent report flushed successfully");
     }
+
 }
