@@ -7,3 +7,382 @@
 2026-01-27 14:51:22 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
 2026-01-27 14:51:25 INFO  org.PagesObject.GiftCardsPage - GiftCardsPage initialized with driver: ChromeDriver: chrome on windows (e839aa44c4842a40d6cef07ee4cc10c0)
 2026-01-27 14:51:25 INFO  org.PagesObject.GiftCardsPage - Starting complete gift card form flow...
+2026-01-29 16:18:04 INFO  org.PagesObject.HomePage - Clicking on 'Bookshelves' link
+2026-01-29 16:18:57 INFO  org.PagesObject.HomePage - Clicking on 'Bookshelves' link
+2026-01-29 16:19:45 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-01-30 14:06:08 INFO  org.PagesObject.HomePage - Clicking on 'Bookshelves' link
+2026-02-02 12:05:00 INFO  org.PagesObject.HomePage - Clicking on 'Bookshelves' link
+2026-02-02 12:16:33 INFO  org.PagesObject.HomePage - Clicking on 'Bookshelves' link
+2026-02-02 12:17:33 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 14:16:57 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 14:16:59 INFO  org.PagesObject.FiltersPage - Starting flow: Apply Open Storage Filter
+2026-02-02 14:17:00 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 14:17:27 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 14:17:27 INFO  org.PagesObject.FiltersPage - Starting flow: Apply Open Storage Filter
+2026-02-02 14:17:28 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 14:44:21 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 14:44:21 INFO  org.PagesObject.FiltersPage - Starting flow: Apply Open Storage Filter
+2026-02-02 14:44:22 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 14:44:22 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 14:57:20 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 14:57:21 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 14:57:21 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:16:53 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:16:56 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:16:57 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:20:10 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:20:12 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:20:13 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:25:45 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:25:48 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:25:48 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:25:49 INFO  org.PagesObject.FiltersPage - Selected Open Storage
+2026-02-02 15:31:39 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:31:42 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:31:43 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:31:58 INFO  org.PagesObject.FiltersPage - Selected 'Open Storage' option
+2026-02-02 15:31:58 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 15:31:59 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 15:32:39 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:32:42 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:32:43 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:37:43 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:37:46 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:43:24 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:43:37 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:43:54 INFO  org.PagesObject.FiltersPage - Clicked on Storage Type section
+2026-02-02 15:44:27 INFO  org.PagesObject.FiltersPage - Open option text not found, clicked first storage option as fallback
+2026-02-02 15:44:47 INFO  org.PagesObject.FiltersPage - Apply button not found (maybe filters auto-apply) - continuing
+2026-02-02 15:47:44 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:47:46 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 15:47:48 INFO  org.PagesObject.FiltersPage - Expanded Storage Type filter section
+2026-02-02 15:47:49 INFO  org.PagesObject.FiltersPage - Selected Open Storage option
+2026-02-02 15:48:44 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 15:48:47 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:13:09 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:15:48 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:23:07 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:32:22 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:32:43 INFO  org.PagesObject.HomePage - Bookshelves results page loaded
+2026-02-02 16:32:43 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:34:02 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:34:03 INFO  org.PagesObject.HomePage - Bookshelves results page loaded
+2026-02-02 16:34:03 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:37:06 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:37:33 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:37:34 INFO  org.PagesObject.HomePage - Bookshelves results page loaded
+2026-02-02 16:37:34 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:37:34 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:37:35 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:37:35 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:38:58 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:39:22 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:39:23 INFO  org.PagesObject.HomePage - Bookshelves results page loaded
+2026-02-02 16:39:24 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:39:24 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:39:24 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:39:24 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:50:30 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:53:40 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:53:56 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:53:57 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:53:57 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:53:57 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:54:29 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:54:45 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:54:45 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:54:45 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:54:46 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:55:58 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:56:09 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:56:09 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:56:09 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:56:09 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:56:52 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:56:53 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:56:53 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:56:53 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:56:54 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:58:48 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 16:58:49 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 16:58:49 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 16:58:49 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 16:58:50 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 16:59:11 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:07:26 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:08:13 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:08:15 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:08:16 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:08:16 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:08:16 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:11:40 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:11:42 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:11:42 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:11:42 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:11:42 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:11:53 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:24:21 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:24:23 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:24:23 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:24:23 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:24:24 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:24:26 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:30:33 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:30:35 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:30:35 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:30:35 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:30:35 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:34:14 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:34:15 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:34:15 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:34:16 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:34:16 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:34:18 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:40:21 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:40:23 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:40:23 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:40:23 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:40:23 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:40:25 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:54:51 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:54:53 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:54:53 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:54:53 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:54:54 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:54:56 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:56:49 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:56:51 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:56:51 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:56:51 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:56:51 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:56:54 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 17:59:02 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 17:59:03 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 17:59:04 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 17:59:04 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 17:59:04 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 17:59:06 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 18:08:52 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 18:08:53 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 18:08:54 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 18:08:54 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 18:08:54 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 18:08:58 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 18:14:26 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 18:14:27 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 18:14:27 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 18:14:27 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 18:14:28 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 18:14:31 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 18:25:39 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 18:25:41 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 18:25:41 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 18:25:41 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 18:25:41 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 18:25:45 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-02 18:29:37 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-02 18:29:38 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-02 18:29:39 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-02 18:29:39 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-02 18:29:39 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-02 18:29:42 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 09:44:57 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 09:44:59 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 09:44:59 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 09:44:59 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 09:45:00 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 09:45:05 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 09:47:33 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 09:47:35 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 09:47:35 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 09:47:36 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 09:47:36 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 09:47:39 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 09:51:32 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 09:51:33 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 09:51:33 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 09:51:34 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 09:51:34 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 09:51:37 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:00:50 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:00:52 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:00:52 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:00:53 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:00:53 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:00:56 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:08:41 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:08:43 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:08:43 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:08:44 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:08:45 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:08:45 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:08:45 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:08:46 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:08:46 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:08:46 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:08:47 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:08:47 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:08:47 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:08:48 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:08:49 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:08:50 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:08:50 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:08:50 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:08:50 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:08:55 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:08:55 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:08:56 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:17:58 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:18:00 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:18:00 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:18:01 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:18:02 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:18:02 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:18:02 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:18:02 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:18:02 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:18:02 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:18:02 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:18:02 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:18:03 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:18:04 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:18:04 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:18:05 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:18:05 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:18:06 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:18:06 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:18:11 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:18:11 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:18:11 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:19:37 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:19:39 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:19:40 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:19:40 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:19:41 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:19:41 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:19:41 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:19:41 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:19:41 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:19:42 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:19:42 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:19:42 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:19:42 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:19:43 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:19:44 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:19:45 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:19:45 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:19:45 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:19:45 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:19:51 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:19:51 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:19:52 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:31:14 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:31:14 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:31:19 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:31:19 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:31:21 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:31:21 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:31:23 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:31:23 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:31:24 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:31:26 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:31:26 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:31:26 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:31:26 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:31:26 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:31:26 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:31:27 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:31:27 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:31:27 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:31:28 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:31:30 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:31:30 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:31:30 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:33:51 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:33:51 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:33:55 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:33:55 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:33:57 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:33:57 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:33:59 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:33:59 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:33:59 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:34:01 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:34:01 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:34:01 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:34:01 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:34:01 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:34:02 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:34:02 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:34:02 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:34:03 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:34:04 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:34:04 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:34:04 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:34:04 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:35:13 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:35:13 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:35:16 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:35:17 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:35:18 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:35:18 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:35:20 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:35:20 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:35:21 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:35:22 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:35:22 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:35:23 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:35:23 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:35:23 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:35:23 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:35:24 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:35:24 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:35:24 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:35:25 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:35:26 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:35:26 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:35:26 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:35:49 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:35:49 INFO  org.testCases.DisplayBookshelvesTest - Execution initiated for Display Bookshelves scenario
+2026-02-03 10:35:52 INFO  org.testCases.DisplayBookshelvesTest - Fetched search keyword from Excel file: bookshelves
+2026-02-03 10:35:52 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:35:53 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:35:53 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:35:55 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:35:55 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:35:56 INFO  org.testCases.DisplayBookshelvesTest - Directed browser to the Bookshelves results page
+2026-02-03 10:35:58 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:35:58 INFO  org.testCases.DisplayBookshelvesTest - All filter categories expanded successfully
+2026-02-03 10:35:58 INFO  org.testCases.DisplayBookshelvesTest - Storage Type filter options displayed
+2026-02-03 10:35:58 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:35:58 INFO  org.testCases.DisplayBookshelvesTest - Chosen storage type: Open Storage
+2026-02-03 10:35:59 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:35:59 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:35:59 INFO  org.testCases.DisplayBookshelvesTest - Filter selections applied to product results
+2026-02-03 10:36:00 INFO  org.testCases.DisplayBookshelvesTest - Extracted and logged the top three products
+2026-02-03 10:36:00 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:36:00 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:36:01 INFO  org.testCases.DisplayBookshelvesTest - Report generated and saved
+2026-02-03 10:36:01 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)
+2026-02-03 10:42:45 INFO  org.testCases.DisplayBookshelvesTest - Test Started
+2026-02-03 10:42:47 INFO  org.testCases.DisplayBookshelvesTest - Read item from Excel: bookshelves
+2026-02-03 10:42:47 INFO  org.PagesObject.HomePage - Opening Bookshelves via search: bookshelves
+2026-02-03 10:42:49 INFO  org.testCases.DisplayBookshelvesTest - Navigated to Bookshelves Page
+2026-02-03 10:42:49 INFO  org.PagesObject.FiltersPage - Clicked on ALL FILTERS button
+2026-02-03 10:42:49 INFO  org.testCases.DisplayBookshelvesTest - Opened all filters
+2026-02-03 10:42:49 INFO  org.testCases.DisplayBookshelvesTest - Opened Storage Type Filter
+2026-02-03 10:42:49 INFO  org.PagesObject.FiltersPage - Clicked Open Storage option
+2026-02-03 10:42:49 INFO  org.testCases.DisplayBookshelvesTest - Selected Open Storage
+2026-02-03 10:42:50 INFO  org.PagesObject.FiltersPage - Clicked on Apply Filter button
+2026-02-03 10:42:50 INFO  org.PagesObject.FiltersPage - Products loaded after applying filter
+2026-02-03 10:42:50 INFO  org.testCases.DisplayBookshelvesTest - Applied filters
+2026-02-03 10:42:50 INFO  org.testCases.DisplayBookshelvesTest - Printed first three products successfully
+2026-02-03 10:42:51 INFO  org.testCases.DisplayBookshelvesTest - Extent report flushed successfully
+2026-02-03 10:42:52 INFO  org.testCases.TC_GiftCards_DDT - Gift Cards scenario execution started
+2026-02-03 10:42:53 INFO  org.testCases.TC_GiftCards_DDT - Input values loaded from Excel for Gift Card form
+2026-02-03 10:42:53 INFO  org.PagesObject.HomePage - Clicking on 'Gift Cards' link
+2026-02-03 10:42:53 INFO  org.testCases.TC_GiftCards_DDT - Navigated to Gift Cards page successfully
+2026-02-03 10:42:53 INFO  org.testCases.TC_GiftCards_DDT - Window focus moved to the latest browser tab (if available)
+2026-02-03 10:42:58 INFO  org.testCases.TC_GiftCards_DDT - Gift Card form fields populated with Excel data
+2026-02-03 10:42:58 INFO  org.testCases.TC_GiftCards_DDT - Captured screenshot after completing validation step
+2026-02-03 10:42:58 INFO  org.testCases.TC_GiftCards_DDT - Extent report written to disk (flush completed)

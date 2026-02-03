@@ -8,7 +8,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 public class ExtentReport {
     private static ExtentReports extent;
-    private static final String REPORT_DIR = "target/extent";
+    private static final String REPORT_DIR = "C:\\Users\\2457257\\IdeaProjects\\Hackathon-project-cts\\target\\extent";
     private static final String REPORT_FILE = "ExtentReport.html";
     private static String reportPath = Paths.get(REPORT_DIR, REPORT_FILE).toString();
     public static ExtentReports getInstance() {
@@ -20,6 +20,7 @@ public class ExtentReport {
                 spark.config().setDocumentTitle("Display Bookshelves Automation");
                 spark.config().setReportName("Display Bookshelves");
                 spark.config().setTheme(Theme.STANDARD);
+                spark.config().thumbnailForBase64(true);
                 extent = new ExtentReports();
                 extent.attachReporter(spark);
 
@@ -28,10 +29,6 @@ public class ExtentReport {
             }
         }
         return extent;
-    }
-
-    public static String getReportPath() {
-        return reportPath;
     }
 }
 

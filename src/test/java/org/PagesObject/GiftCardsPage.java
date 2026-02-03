@@ -78,17 +78,7 @@ public class GiftCardsPage extends BasePage {
         qtyEl.sendKeys(qty == null ? "" : qty.trim());
 
         // --- click the INPUT radios via their ids (freshly located) ---
-        WebElement sendGiftInput = waitFor(5).until(
-                ExpectedConditions.elementToBeClickable(By.id("radiogift")));
-        sendGiftInput.click();
 
-        WebElement todayInput = waitFor(5).until(
-                ExpectedConditions.elementToBeClickable(By.id("giftNow")));
-        todayInput.click();
-
-        WebElement emailInput = waitFor(5).until(
-                ExpectedConditions.elementToBeClickable(By.id("deliveryModeEMAIL")));
-        emailInput.click();
     }
 
 

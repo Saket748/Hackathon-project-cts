@@ -1,24 +1,25 @@
 package org.testBase;
 
 import java.time.Duration;
-import org.openqa.selenium.PageLoadStrategy;
-import org.openqa.selenium.WebDriver;
+
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.PageLoadStrategy;
+
+import org.testng.annotations.*;
 
 public class BaseClass {
 
-    protected WebDriver driver;
+    protected static WebDriver driver;
+    private final String baseUrl = "https://www.urbanladder.com/";
 
-    @BeforeClass
-    public void setup() {
+    @BeforeSuite(alwaysRun = true)
+    public void setupSuite() {
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
-        // options.addArguments("--headless=new"); // if needed
-        options.setPageLoadStrategy(PageLoadStrategy.EAGER);      // only wait DOMContentLoaded
+        options.setPageLoadStrategy(PageLoadStrategy.EAGER);
 
         driver = new ChromeDriver(options);
 
@@ -26,26 +27,27 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 
-        // Open Gift Cards page directly (recommended for this test)
-        String Url = "https://www.urbanladder.com/";
+        openBaseUrlWithRescue(baseUrl);
+    }
 
-        openBaseUrlWithRescue(Url);
+    @BeforeMethod(alwaysRun = true)
+    public void goHomeBeforeEachTest() {
+        openBaseUrlWithRescue(baseUrl);   // now driver will not be null
     }
 
     private void openBaseUrlWithRescue(String url) {
         try {
             driver.get(url);
-        } catch (org.openqa.selenium.TimeoutException e) {
-            // Stop pending loads (ads/trackers) so the test can proceed
+        } catch (TimeoutException e) {
             try {
-                ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("window.stop();");
+                ((JavascriptExecutor) driver).executeScript("window.stop();");
             } catch (Exception ignored) {}
         }
     }
 
-    @AfterClass(alwaysRun = true)
-    public void tearDown() {
+    @AfterSuite(alwaysRun = true)
+    public void tearDownSuite() {
         if (driver != null) driver.quit();
+
     }
 }
-
